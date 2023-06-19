@@ -3,6 +3,21 @@
 [ext_resource type="PackedScene" uid="uid://yq2xwp08rliq" path="res://player.tscn" id="1_qljpj"]
 [ext_resource type="PackedScene" uid="uid://be0bi8gra4elk" path="res://enemy.tscn" id="2_euvme"]
 
+[sub_resource type="Animation" id="Animation_pq2cj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Enemy:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(300, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_16uml"]
 resource_name = "move"
 length = 4.0
@@ -18,21 +33,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(300, 0), Vector2(300, 200), Vector2(300, -200)]
-}
-
-[sub_resource type="Animation" id="Animation_pq2cj"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Enemy:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(300, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gmckh"]

@@ -1,11 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://yq2xwp08rliq"]
+[gd_scene load_steps=3 format=3 uid="uid://cvs2xjgwq6j63"]
 
-[ext_resource type="Texture2D" uid="uid://csqivlie87kht" path="res://icon.svg" id="1_n2isl"]
-[ext_resource type="Script" path="res://player.gd" id="1_p3lcl"]
+[ext_resource type="Texture2D" uid="uid://cksw7t1m0g0g8" path="res://wand_fire.png" id="1_0ycmp"]
+[ext_resource type="Script" path="res://player.gd" id="1_aihr8"]
 
 [node name="Player" type="Node2D"]
-scale = Vector2(0.5, 0.5)
-script = ExtResource("1_p3lcl")
+script = ExtResource("1_aihr8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_n2isl")
+position = Vector2(39, 0)
+texture = ExtResource("1_0ycmp")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(56, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.35
+one_shot = true
